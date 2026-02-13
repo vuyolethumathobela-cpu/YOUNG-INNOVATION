@@ -1,1 +1,25 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waste Classifier App</title>
+</head>
+<body>
+
+  <h1>Waste Classification App</h1>
+
+  <button onclick="startCamera()">Start Camera</button>
+
+  <p id="result">Waiting for camera...</p>
+
+  <video id="webcam" autoplay playsinline width="300" height="300"></video>
+
+  <!-- TensorFlow -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest"></script>
+
+  <!-- Your JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
